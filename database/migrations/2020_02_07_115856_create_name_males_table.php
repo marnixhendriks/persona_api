@@ -15,6 +15,7 @@ class CreateNameMalesTable extends Migration
     {
         Schema::create('name_males', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name')->unique();
             $table->timestamps();
         });
     }
