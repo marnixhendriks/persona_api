@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\NameMaleController;
+use App\Lastname;
+use App\NameMale;
 use Illuminate\Http\Request;
 
 /*
@@ -13,9 +16,4 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('persona', function () {
-    return [
-        'first_name' => 'Marnix',
-        'last_name' => 'Hendriks'
-    ];
-});
+Route::get('persona/{sex}', 'NameController@show');
