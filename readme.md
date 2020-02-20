@@ -19,40 +19,63 @@ Run `php artisan migrate` to populate the database.
 
 ### How to use? ###
 This is how the URL should look like:
+
 */api/persona/{gender}/{age group}*
 
 #### Using gender (a,m,f) ####
 */api/persona/a* or */api/persona/A*
+
 Fetch data for both Male and Female, all ages
 
 */api/persona/m* or */api/persona/M*
+
 Fetch data for a Male, all ages
 
 */api/persona/f* or */api/persona/F*
+
 Fetch data for a Female, all ages
 
 #### Using age groups ####
 The following age groups are used:
 
 Number :    Age group with min and max age
+
 1 :         5-90 (all ages)
+
 3 :         3-11 
+
 4 :         5-7
+
 6 :         5-45
+
 8 :         8-10
+
 10 :        10-13
+
 11 :        12+
+
 12 :        13-17
+
 14 :        18-24
+
 16 :        24-29
+
 18 :        18-65
+
 21 :        18+
+
 24 :        25-45
+
 25 :        30+
+
 27 :        38-65
+
 28 :        45+
+
 30 :        65+
 
+
 To get data from a persona (male or female) in the age between 38 and 65 you use:
+
 */api/persona/a/27*
 
