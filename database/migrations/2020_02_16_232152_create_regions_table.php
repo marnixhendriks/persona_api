@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNameMalesTable extends Migration
+class CreateRegionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateNameMalesTable extends Migration
      */
     public function up()
     {
-        Schema::create('name_males', function (Blueprint $table) {
+        Schema::create('regions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->unique();
             $table->timestamps();
         });
+        DB::unprepared(File::get(base_path() . '/database/data/regions.sql'));
     }
 
     /**
@@ -27,6 +27,6 @@ class CreateNameMalesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('name_males');
+        Schema::dropIfExists('regions');
     }
 }

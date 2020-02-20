@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLastnamesTable extends Migration
+class CreateNamesFemaleNamesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateLastnamesTable extends Migration
      */
     public function up()
     {
-        Schema::create('lastnames', function (Blueprint $table) {
+        Schema::create('names_female_names', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name')->unique();
             $table->timestamps();
         });
+        DB::unprepared(File::get(base_path() . '/database/data/names_female_names.sql'));
     }
 
     /**
@@ -27,6 +27,6 @@ class CreateLastnamesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lastnames');
+        Schema::dropIfExists('names_female_names');
     }
 }

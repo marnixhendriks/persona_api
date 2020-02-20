@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class NameFemale extends Model
+class AgeGroup extends Model
 {
     //
 }

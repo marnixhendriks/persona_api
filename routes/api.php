@@ -16,4 +16,9 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('persona/{sex}', 'NameController@show');
+Route::get('persona/{gender}/{age_group_id}', 'PersonaController@show_age_group');
+
+Route::get('persona/{gender}', 'PersonaController@showByGender');
+
+Route::get('persona', 'PersonaController@index');
+Route::get('ages', 'AgesController@getYearOfBirth');
