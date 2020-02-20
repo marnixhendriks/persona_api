@@ -1,8 +1,9 @@
-## Persona API ##
+## (Dutch) Persona API ##
 
 This API fetches data for use on a persona. Personas are fictive persons that could be real people. This gives designers, developers and other creatives the possibility to develop products for an imaginary person who seems real. 
 
 ### Data ###
+This API takes into account the fact that names were popular in a certain period. For example the female name 'Geertruida' lost its popularity in 1960 and therefore it will not be assigned to personas born after that age. Another example is the male name 'Finn'. This only became popular around the year 2000 and will therefore not be assigned to personas born before that year.
 
 ### Setup ###
 Run `php artisan migrate` to populate the database. 
@@ -22,3 +23,27 @@ Fetch data for a Male, all ages
 Fetch data for a Female, all ages
 
 #### Using age groups ####
+The following age groups are used:
+
+Number :    Age group with min and max age
+1 :         5-90 (all ages)
+3 :         3-11 
+4 :         5-7
+6 :         5-45
+8 :         8-10
+10 :        10-13
+11 :        12+
+12 :        13-17
+14 :        18-24
+16 :        24-29
+18 :        18-65
+21 :        18+
+24 :        25-45
+25 :        30+
+27 :        38-65
+28 :        45+
+30 :        65+
+
+To get data from a persona (male or female) in the age between 38 and 65 you use:
+*/api/persona/a/27*
+
