@@ -6,7 +6,7 @@ This API fetches data for use on a persona. Personas are fictive persons that co
 The application takes into account the fact that names were popular in a certain period. For example the female name 'Geertruida' lost its popularity in 1960 and therefore it will not be assigned to personas born after that age. Another example is the male name 'Finn'. This only became popular around the year 2000 and will therefore not be assigned to personas born before that year.
 
 #### Sample output: ####
-`{"first_name": "Theodorus", "last_name": "Boltendal", "gender": "m", "year_of_birth": 1942, "city": "Roermond"}`
+`{"first_name": "Theodorus", "last_name": "Breedveld", "gender": "m", "year_of_birth": 1942, "city": "Roermond"}`
 
 ## Setup ##
 Run `php artisan migrate` to populate the database. 
