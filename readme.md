@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Persona API ##
 
 This API fetches data for use on a persona. Personas are fictive persons that could be real people. This gives designers, developers and other creatives the possibility to develop products for an imaginary person who seems real. 
@@ -20,3 +21,8 @@ Fetch data for a Male, all ages
 Fetch data for a Female, all ages
 
 #### Using age groups ####
+=======
+##Persona API
+
+API to pull data from a persona. 
+>>>>>>> 55c1c29c1bef6d34bf9671a5af9c00079fb18ba2
