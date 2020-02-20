@@ -21,8 +21,3 @@ Fetch data for a Male, all ages
 Fetch data for a Female, all ages
 
 #### Using age groups ####
-=======
-##Persona API
-
-API to pull data from a persona. 
->>>>>>> 55c1c29c1bef6d34bf9671a5af9c00079fb18ba2
