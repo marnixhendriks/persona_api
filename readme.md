@@ -3,7 +3,16 @@
 This API fetches data for use on a persona. Personas are fictive persons that could be real people. This gives designers, developers and other creatives the possibility to develop products for an imaginary person who seems real. 
 
 ### Data ###
-This API takes into account the fact that names were popular in a certain period. For example the female name 'Geertruida' lost its popularity in 1960 and therefore it will not be assigned to personas born after that age. Another example is the male name 'Finn'. This only became popular around the year 2000 and will therefore not be assigned to personas born before that year.
+The application takes into account the fact that names were popular in a certain period. For example the female name 'Geertruida' lost its popularity in 1960 and therefore it will not be assigned to personas born after that age. Another example is the male name 'Finn'. This only became popular around the year 2000 and will therefore not be assigned to personas born before that year.
+
+#### Sample output: ####
+`{`
+`"first_name": "Theodorus",`
+`"last_name": "Boltendal",`
+`"gender": "m",`
+`"year_of_birth": 1942,`
+`"city": "Roermond"`
+`}`
 
 ### Setup ###
 Run `php artisan migrate` to populate the database. 
@@ -12,7 +21,7 @@ Run `php artisan migrate` to populate the database.
 This is how the URL should look like:
 */api/persona/{gender}/{age group}*
 
-#### Using gender (a,m,f)
+#### Using gender (a,m,f) ####
 */api/persona/a* or */api/persona/A*
 Fetch data for both Male and Female, all ages
 
