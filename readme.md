@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Persona API ##
 
 This API fetches data for use on a persona. Personas are fictive persons that could be real people. This gives designers, developers and other creatives the possibility to develop products for an imaginary person who seems real. 
