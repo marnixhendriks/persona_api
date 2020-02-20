@@ -2,6 +2,8 @@
 
 This API fetches data for use on a persona. Personas are fictive persons that could be real people. This gives designers, developers and other creatives the possibility to develop products for an imaginary person who seems real. 
 
+### Data ###
+
 ### Setup ###
 Run `php artisan migrate` to populate the database. 
 
@@ -9,7 +11,7 @@ Run `php artisan migrate` to populate the database.
 This is how the URL should look like:
 */api/persona/{gender}/{age group}*
 
-#### Using gender
+#### Using gender (a,m,f)
 */api/persona/a* or */api/persona/A*
 Fetch data for both Male and Female, all ages
 
