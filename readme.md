@@ -22,18 +22,21 @@ This is how the URL should look like:
 
 */api/persona/{gender}/{age group}*
 
+
 #### Using gender (a,m,f) ####
+Fetch data for both Male and Female, all ages:
+
 */api/persona/a* or */api/persona/A*
 
-Fetch data for both Male and Female, all ages
+
+Fetch data for a Male, all ages:
 
 */api/persona/m* or */api/persona/M*
 
-Fetch data for a Male, all ages
+
+Fetch data for a Female, all ages:
 
 */api/persona/f* or */api/persona/F*
-
-Fetch data for a Female, all ages
 
 #### Using age groups ####
 The following age groups are used:
