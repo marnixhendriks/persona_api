@@ -80,5 +80,9 @@ To get data from a persona (male or female) in the age between 38 and 65 you use
 ## Next ##
 This is still Work in process. Future implementations will involve the following:
 - assigning a profession;
-- get link to a photo that fits age, profession, gender;
-- implement foreign names;
+- providing a link to a photo that fits age, profession, gender and eventually origin;
+- implementation of foreign names;
+- implementation of interests/hobbies;
+- implementation of favorite brands;
+- small description;
+- etc.
