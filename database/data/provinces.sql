@@ -1,25 +1,17 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 4.9.3
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Gegenereerd op: 16 feb 2020 om 16:19
--- Serverversie: 10.4.10-MariaDB
--- PHP-versie: 7.3.12
+-- Host: localhost:8889
+-- Gegenereerd op: 21 feb 2020 om 09:14
+-- Serverversie: 5.7.26
+-- PHP-versie: 7.4.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
--- Database: `persona`
+-- Database: `persona_db`
 --
 
 -- --------------------------------------------------------
@@ -28,21 +20,17 @@ SET time_zone = "+00:00";
 -- Tabelstructuur voor tabel `provinces`
 --
 
-DROP TABLE IF EXISTS `provinces`;
-CREATE TABLE IF NOT EXISTS `provinces` (
-  `provinces_id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `provinces` (
+  `id` int(11) NOT NULL,
   `province` varchar(50) NOT NULL,
-  `province_reference` char(2) NOT NULL,
-  PRIMARY KEY (`provinces_id`),
-  KEY `provincie_id` (`provinces_id`),
-  KEY `provincie_verwijzing` (`province_reference`)
-) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+  `province_reference` char(2) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `provinces`
 --
 
-INSERT INTO `provinces` (`provinces_id`, `province`, `province_reference`) VALUES
+INSERT INTO `provinces` (`id`, `province`, `province_reference`) VALUES
 (1, 'Friesland', 'A'),
 (2, 'Groningen', 'B'),
 (3, 'Drenthe', 'C'),
@@ -56,8 +44,23 @@ INSERT INTO `provinces` (`provinces_id`, `province`, `province_reference`) VALUE
 (11, 'Flevoland', 'K'),
 (12, 'Noord-Holland', 'L'),
 (13, 'nog niet opgegeven', '-');
-COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+--
+-- Indexen voor geëxporteerde tabellen
+--
+
+--
+-- Indexen voor tabel `provinces`
+--
+ALTER TABLE `provinces`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT voor geëxporteerde tabellen
+--
+
+--
+-- AUTO_INCREMENT voor een tabel `provinces`
+--
+ALTER TABLE `provinces`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
